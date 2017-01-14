@@ -6,6 +6,8 @@ import com.ankita.leanring.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * Created by amitshrivastava on 14/01/17.
  */
@@ -31,7 +33,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean findUserByUserName(String username) {
-        return false;
+    public User findUserByUserName(String username) {
+        return userRepository.findByUsername(username);
     }
+
+    @Override
+    public List<User> findAll() {
+        return userRepository.findAll();
+    }
+
+
 }
