@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class IndiaEyeApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(IndiaEyeApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(IndiaEyeApplication.class, args);
+    }
 }
